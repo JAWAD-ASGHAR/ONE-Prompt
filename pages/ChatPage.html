@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar Layout</title>
+    <link rel="stylesheet" href="../styles/ChatPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-menu-container">
+        <div class="sidebar-header">
+          <div class="profile">
+            <div class="avatar">JW</div>
+            <div class="user-name">Jawad Work</div>
+          </div>
+          <button class="close-sidebar" id="close-sidebar">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search AI Models" />
+          <div class="search-buttons">
+            <button class="search-btn"><i class="fas fa-keyboard"></i></button>
+            <button class="search-btn"><i class="fas fa-slash"></i></button>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3>Chat</h3>
+          <ul>
+            <li class="active"><i class="fas fa-comment"></i> Chat</li>
+            <li><i class="fas fa-gamepad"></i> Playground</li>
+            <li><i class="fas fa-history"></i> Recent Chats</li>
+            <li><i class="fas fa-flask"></i> Deep Research</li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <h3>Creative</h3>
+          <ul>
+            <li><i class="fas fa-image"></i> Images</li>
+            <li><i class="fas fa-video"></i> Video</li>
+            <li><i class="fas fa-music"></i> Audio</li>
+          </ul>
+        </div>
+
+        <div class="menu-section">
+          <h3>Knowledge</h3>
+          <ul>
+            <li><i class="fas fa-sitemap"></i> Mindmaps</li>
+            <li><i class="fas fa-file-pdf"></i> Chat with PDF</li>
+            <li><i class="fas fa-book"></i> Writing Library</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="help-section">
+        <li><i class="fas fa-question-circle"></i> Help & Support</li>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="header-title">Home</div>
+        <div class="header-actions">
+          <button class="notification-btn">
+            <i class="fas fa-bell"></i>
+          </button>
+          <div class="credits"><i class="fas fa-bolt"></i> 72.7K</div>
+          <button class="plan-btn free">FREE PLAN</button>
+          <button class="plan-btn upgrade">Upgrade Plan</button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <div class="page-content">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>
+          This is where your main content will go. The sidebar is fully
+          responsive and collapses on mobile.
+        </p>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="../logic/ChatPage.js"></script>
+  </body>
+</html>
