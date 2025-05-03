@@ -46,7 +46,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   overflow-y: auto;
   transition: all 0.3s ease;
   border-right: 1px solid #292c2f;
@@ -87,12 +87,19 @@ body {
 }
 
 .close-sidebar {
-  display: none;
   background: none;
   border: none;
   color: #888;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-sidebar:hover {
+  color: #fff;
 }
 
 .search-bar {
@@ -292,15 +299,14 @@ body {
 @media (max-width: 992px) {
   .sidebar {
     transform: translateX(-100%);
-    width: 300px;
   }
-
+  
   .sidebar.show {
     transform: translateX(0);
   }
-
+  
   .close-sidebar {
-    display: block;
+    display: flex;
   }
 
   .main-content {
@@ -533,7 +539,7 @@ body {
   align-items: center;
   gap: 8px;
   background-color: #323240;
-  padding: 4px 8px;
+  padding: 8px 8px;
   border-radius: 6px;
   font-size: 14px;
 }

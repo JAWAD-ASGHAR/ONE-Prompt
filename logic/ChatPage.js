@@ -1,5 +1,5 @@
- // Toggle mobile sidebar
- document.getElementById('mobile-toggle').addEventListener('click', function() {
+// Toggle mobile sidebar
+document.getElementById('mobile-toggle').addEventListener('click', function() {
     document.getElementById('sidebar').classList.add('show');
     document.getElementById('overlay').classList.add('active');
 });
@@ -14,10 +14,4 @@ document.getElementById('close-sidebar').addEventListener('click', function() {
 document.getElementById('overlay').addEventListener('click', function() {
     document.getElementById('sidebar').classList.remove('show');
     this.classList.remove('active');
-});
-
-// Collapse sidebar button
-document.getElementById('collapse-btn').addEventListener('click', function() {
-    document.getElementById('sidebar').classList.toggle('collapsed');
-    document.getElementById('main-content').classList.toggle('expanded');
 });
