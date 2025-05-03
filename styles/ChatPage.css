@@ -71,7 +71,7 @@ body {
 .avatar {
   width: 25px;
   height: 25px;
-  background-color: #4caf50;
+  background-color: #0EDBA1;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -377,7 +377,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .content {
@@ -387,10 +388,11 @@ body {
 }
 
 .main-heading {
-  margin-top: 60px;
+  margin-top: 50px;
   font-weight: 600;
   font-size: 2.8em;
   line-height: 1.2;
+  line-height: 40px;
   letter-spacing: -1px;
   background-image: var(--primary-gradient);
   -webkit-background-clip: text;
@@ -492,15 +494,6 @@ body {
   margin-left: 8px;
 }
 
-.chat-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  background-color: var(--bg-color);
-}
-
 .chat-input-container {
   max-width: 800px;
   margin: 0 auto;
@@ -517,7 +510,7 @@ body {
 
 .chat-input {
   width: 100%;
-  padding: 10px;
+  padding: 0;
   background-color: transparent;
   border: none;
   outline: none;
@@ -525,7 +518,7 @@ body {
   font-size: 15px;
   resize: none;
   line-height: 1.5;
-  max-height: 100px;
+  max-height: 30px;
 }
 
 .chat-controls {
@@ -552,13 +545,14 @@ body {
 
 .model-name {
   margin-right: 6px;
+  color: var(--text-color);
 }
 
 .token-badge {
   display: flex;
   align-items: center;
-  background-color: rgba(122, 37, 213, 0.2);
-  color: #a67ad7;
+  background-color: rgb(86, 24, 152);
+  color: var(--text-color);
   padding: 2px 8px;
   border-radius: 6px;
   font-size: 12px;
