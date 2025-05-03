@@ -1,4 +1,3 @@
-/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,6 @@ body {
     sans-serif;
 }
 
-/* Sidebar Styles */
 .sidebar {
   width: 290px;
   height: 100vh;
@@ -194,7 +192,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* Header Styles */
 .header {
   display: flex;
   align-items: center;
@@ -257,7 +254,6 @@ body {
   color: #fff;
 }
 
-/* Main Content Styles */
 .main-content {
   flex: 1;
   margin-left: 290px;
@@ -269,7 +265,6 @@ body {
   padding: 24px;
 }
 
-/* Mobile Toggle Button */
 .mobile-toggle {
   display: none;
   background: none;
@@ -280,7 +275,6 @@ body {
   margin-right: 16px;
 }
 
-/* Overlay for mobile */
 .overlay {
   position: fixed;
   top: 0;
@@ -296,7 +290,6 @@ body {
   display: block;
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .sidebar {
     transform: translateX(-100%);
@@ -329,7 +322,6 @@ body {
   }
 }
 
-/* Small screens adjustments */
 @media (max-width: 576px) {
   .header-actions {
     gap: 8px;
@@ -346,7 +338,6 @@ body {
   }
 }
 
-/* Collapsed sidebar styles */
 .sidebar.collapsed {
   width: 60px;
 }
@@ -374,8 +365,6 @@ body {
     width: 100%;
   }
 }
-
-/* Chat Page Styles */
 
 .container {
   max-width: 800px;
@@ -618,7 +607,6 @@ body {
   color: #ff9800;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
     padding: 15px;
@@ -643,7 +631,6 @@ body {
   }
 }
 
-/* Sidebar Animations */
 .sidebar.show {
   animation: sidebar-slide-in 0.5s cubic-bezier(.77,0,.18,1);
   box-shadow: 0 0 32px 0 rgba(0,0,0,0.18);
@@ -653,13 +640,11 @@ body {
   100% { transform: translateX(0); opacity: 1; }
 }
 
-/* Input Box Animation */
 .chat-input-container:focus-within {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   transform: scale(1.025);
 }
 
-/* Card Fade/Slide In Animation */
 @keyframes card-fade-in {
   0% { opacity: 0; transform: translateY(40px) scale(0.98); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
@@ -670,13 +655,11 @@ body {
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Prompt List Animation */
 @keyframes prompt-list-fade-in {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Subtle hover for prompt items */
 .prompt-item:hover {
   box-shadow: 0 2px 8px rgba(122,37,213,0.08);
 }
