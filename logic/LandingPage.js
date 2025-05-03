@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Wait for all videos to be ready
   videos.forEach(video => {
     if (video.readyState >= 3) {
       loaded++;
@@ -27,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Minimum loading time (e.g., 1.5s)
   setTimeout(() => {
     minTimePassed = true;
     tryHideOverlay();
