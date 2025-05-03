@@ -89,9 +89,6 @@ AI-Tools-App/
    ```
 3. Open a Pull Request on GitHub.
 
-## License
-MIT License. See [LICENSE](LICENSE) for details.
-
 ## Author
 [Jawad Asghar](https://github.com/JAWAD-ASGHAR)
 
