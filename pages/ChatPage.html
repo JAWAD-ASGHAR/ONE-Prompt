@@ -20,7 +20,7 @@
             <div class="user-name">Jawad Work</div>
           </div>
           <button class="close-sidebar" id="close-sidebar">
-            <i class="fas fa-times"></i>
+            <i class="far fa-times"></i>
           </button>
         </div>
 
@@ -28,15 +28,13 @@
           <i class="fas fa-search"></i>
           <input type="text" placeholder="Search AI Models" />
           <div class="search-buttons">
-            <button class="search-btn"><i class="fas fa-keyboard"></i></button>
-            <button class="search-btn"><i class="fas fa-slash"></i></button>
+            <button class="search-btn">/</button>
           </div>
         </div>
-
         <div class="menu-section">
           <h3>Chat</h3>
           <ul>
-            <li class="active"><i class="fas fa-comment"></i> Chat</li>
+            <li class="active"><i class="far fa-comment"></i> Chat</li>
             <li><i class="fas fa-gamepad"></i> Playground</li>
             <li><i class="fas fa-history"></i> Recent Chats</li>
             <li><i class="fas fa-flask"></i> Deep Research</li>
@@ -46,7 +44,7 @@
         <div class="menu-section">
           <h3>Creative</h3>
           <ul>
-            <li><i class="fas fa-image"></i> Images</li>
+            <li><i class="far fa-image"></i> Images</li>
             <li><i class="fas fa-video"></i> Video</li>
             <li><i class="fas fa-music"></i> Audio</li>
           </ul>
@@ -56,14 +54,14 @@
           <h3>Knowledge</h3>
           <ul>
             <li><i class="fas fa-sitemap"></i> Mindmaps</li>
-            <li><i class="fas fa-file-pdf"></i> Chat with PDF</li>
+            <li><i class="far fa-file-pdf"></i> Chat with PDF</li>
             <li><i class="fas fa-book"></i> Writing Library</li>
           </ul>
         </div>
       </div>
 
       <div class="help-section">
-        <li><i class="fas fa-question-circle"></i> Help & Support</li>
+        <li><i class="far fa-question-circle"></i> Help & Support</li>
       </div>
     </div>
 
@@ -86,12 +84,295 @@
       </header>
 
       <!-- Page Content -->
-      <div class="page-content">
-        <h1>Welcome to Your Dashboard</h1>
-        <p>
-          This is where your main content will go. The sidebar is fully
-          responsive and collapses on mobile.
-        </p>
+      <div class="container">
+        <div class="content">
+          <h1 class="main-heading">
+            Hello, I'm AI!<br />Got a question for me?
+          </h1>
+          <p class="subheading">
+            Explore what else otteri can help you with<br />Otteri AI Tools
+            available,
+          </p>
+
+          <div class="card-grid">
+            <div class="explore-card">
+              <div class="card-icon" style="color: #7a25d5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <polyline points="21 15 16 10 5 21" />
+                </svg>
+              </div>
+              Generate Images
+            </div>
+
+            <div class="explore-card">
+              <div class="card-icon" style="color: #bf51b4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="23 7 16 12 23 17 23 7" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                </svg>
+              </div>
+              Generate Videos
+            </div>
+
+            <div class="explore-card">
+              <div class="card-icon" style="color: #fa567f">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              Chat with PDF
+            </div>
+
+            <div class="explore-card">
+              <div class="card-icon" style="color: #c7387b">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 18V5l12-2v13" />
+                  <circle cx="6" cy="18" r="3" />
+                  <circle cx="18" cy="16" r="3" />
+                </svg>
+              </div>
+              Generate Audio
+            </div>
+          </div>
+
+          <h3 class="prompts-heading">Quick Prompts,</h3>
+
+          <div class="prompt-list">
+            <div class="prompt-item">
+              <div class="prompt-content">
+                <div class="prompt-icon icon-green">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span class="prompt-text"
+                  >What are some classic books everyone should read?</span
+                >
+              </div>
+              <div class="arrow-icon" style="color: #7a25d5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="prompt-item">
+              <div class="prompt-content">
+                <div class="prompt-icon icon-blue">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span class="prompt-text"
+                  >List some useful websites for learning new skills.</span
+                >
+              </div>
+              <div class="arrow-icon" style="color: #7a25d5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="prompt-item">
+              <div class="prompt-content">
+                <div class="prompt-icon icon-orange">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span class="prompt-text"
+                  >How do successful people stay motivated?</span
+                >
+              </div>
+              <div class="arrow-icon" style="color: #7a25d5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-footer">
+          <div class="chat-input-container">
+            <textarea
+              class="chat-input"
+              placeholder="Send a message..."
+            ></textarea>
+
+            <div class="chat-controls">
+              <div class="model-selector">
+                <div class="model-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#10a37f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4M12 8h.01" />
+                  </svg>
+                </div>
+                <span class="model-name">ChatGPT 3.5 Turbo</span>
+                <div class="token-badge">
+                  <span class="token-icon">⚡</span>
+                  <span>4</span>
+                </div>
+              </div>
+
+              <div class="button-group">
+                <button class="icon-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                    />
+                  </svg>
+                </button>
+
+                <button class="icon-button send-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
