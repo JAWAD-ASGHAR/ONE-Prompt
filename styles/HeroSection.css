@@ -233,9 +233,11 @@ nav ul li:hover {
   }
   .hero-content h1 {
     text-align: center;
+    margin-top: 10vh;
   }
   .hero-content p {
     text-align: center;
+    margin-top: 3vh;
   }
   .hero-content {
     display: flex;
@@ -270,12 +272,15 @@ nav ul li:hover {
   }
   .hero-content h1 {
     text-align: center;
+    margin-top: 10vh;
   }
   .hero-content p {
     text-align: center;
+    margin-top: 3vh;
   }
   .hero-content .redirect-btn {
     font-size: var(--text-xs);
+    margin-top: 3vh;
   }
   .hero-content {
     margin-left: 2vw;
@@ -306,6 +311,15 @@ nav ul li:hover {
 }
 
 @media (max-width: 400px) {
+  .hero-content h1 {
+    margin-top: 10vh;
+  }
+  .hero-content p {
+    margin-top: 3vh;
+  }
+  .hero-content .redirect-btn {
+    margin-top: 3vh;
+  }
   .hero-content {
     display: flex;
     flex-direction: column;
