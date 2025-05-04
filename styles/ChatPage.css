@@ -244,6 +244,17 @@ body {
   font-weight: 500;
 }
 
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #7e3af2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .plan-btn.free {
   background-color: #33373c;
   color: #fff;
@@ -329,7 +340,8 @@ body {
 
   .credits,
   .plan-btn.free,
-  .plan-btn.upgrade {
+  .plan-btn.upgrade,
+  .notification-btn {
     display: none;
   }
 
