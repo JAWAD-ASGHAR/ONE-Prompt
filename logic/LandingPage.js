@@ -11,5 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     hideOverlay();
-  }, 3000);
+  }, 5000);
 });
