@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONEPrompt - Login</title>
+    <link rel="stylesheet" href="styles/Login.css" />
+    <link rel="icon" href="./public/Favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Base gradient layer -->
+      <div class="base-gradient"></div>
+
+      <!-- Overlay gradient layer with opacity transition -->
+      <div class="overlay-gradient" id="overlayGradient"></div>
+
+      <!-- Button overlay gradient layer with opacity transition -->
+      <div class="button-overlay" id="buttonOverlay"></div>
+
+      <!-- Content -->
+      <div class="content">
+        <div class="login-box" id="loginBox">
+          <div class="logo-container">
+            <img
+              src="./public/Favicon.png"
+              alt="Cloud Box"
+              width="40"
+              height="40"
+            />
+            <h1>ONE<span style="font-weight: 400">Prompt</span></h1>
+            <p>
+              Welcome to ONEPrompt! Sign in to access your personal account.
+            </p>
+          </div>
+          <a href="./ChatPage.html">
+            <button id="googleSignIn" class="signin-button">
+              Sign in with Google
+            </button>
+          </a>
+          <a href="./index.html">
+            <button class="back-button">
+              Back to Home
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="logic/Login.js"></script>
+  </body>
+</html>
