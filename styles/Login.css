@@ -119,3 +119,9 @@ body {
   background: linear-gradient(to right, #4f46e5, #3b82f6);
   transform: translateY(-1px);
 }
+
+@media (max-width: 480px) {
+  .login-box {
+    max-width: 90%;
+  }
+}
