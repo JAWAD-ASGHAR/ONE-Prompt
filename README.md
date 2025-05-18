@@ -1,26 +1,29 @@
 # ONEPrompt
 
-A modern, all-in-one AI productivity platform that brings together the best AI tools (OpenAI, Anthropic, Gemini, and more) in a single, beautiful interface. ONEPrompt is designed for teams and individuals who want to chat, create, and manage knowledge with the latest AI models and creative tools.
+ONEPrompt is a simple, modern AI productivity app that brings together the best AI models (like OpenAI, Anthropic, Gemini, and more) in one easy-to-use dashboard. You can chat, create images, videos, audio, and manage knowledge with a clean, responsive interface. It's made for anyone who wants quick access to top AI tools without any fuss.
 
-## Features
+## What's Inside?
 
-- **Unified AI Dashboard:** Access top AI models (Claude, GPT-4o, etc.) in one place.
-- **Creative Tools:** Generate images, videos, and audio with AI.
+- **Unified AI Dashboard:** All your favorite AI models (Claude, GPT-4, etc.) in one place.
+- **Creative Tools:** Make images, videos, and audio with AI.
 - **Knowledge Tools:** Mindmaps, chat with PDF, writing library, and more.
-- **Responsive UI:** Fully responsive for desktop, tablet, and mobile.
-- **Animated Loading Screen:** Ensures smooth video and UI loading.
-- **Modern Sidebar Navigation:** Quick access to all features.
-- **Beautiful Animations:** Subtle, modern animations throughout the app.
-- **Dark Mode:** Sleek, accessible dark theme by default.
+- **Responsive Design:** Works great on desktop, tablet, and mobile.
+- **Modern UI:** Dark mode, smooth animations, and a sidebar for easy navigation.
 
 ## Tech Stack
 
-- **HTML5 & CSS3** (modular, with BEM-like class naming)
-- **Vanilla JavaScript** (for loading and UI logic)
+- **HTML5 & CSS3**
+- **Vanilla JavaScript**
 - **FontAwesome** (for icons)
-- **Responsive Design** (CSS Grid, Flexbox, media queries)
+- **No frameworks or build tools needed**
 
-## Folder Structure
+## How to Use
+
+1. Clone or download this repo.
+2. Open `index.html` in your browser.
+3. That's it! No setup or install required.
+
+## File Structure
 
 ```
 AI-Tools-App/
@@ -51,47 +54,20 @@ AI-Tools-App/
 └── README.md
 ```
 
-## Getting Started
+## Customizing
 
-### Prerequisites
-- Modern web browser (Chrome, Edge, Firefox, Safari)
-- No build tools required (static HTML/CSS/JS)
+- Swap out images in `public/` for your own branding.
+- Edit the models and features in the JS/HTML as you like.
+- Change colors and fonts in the CSS files.
 
-### Running Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/JAWAD-ASGHAR/AI-Tools-App.git
-   cd AI-Tools-App
-   ```
-2. Open `index.html` in your browser.
+## About Me
 
-### File Overview
-- `index.html`: Main landing page (hero, features, modals, footer)
-- `ChatPage.html`: AI chat dashboard
-- `logic/`: JavaScript for loading and UI logic
-- `styles/`: Modular CSS for each section/page
-- `public/`: Images, videos, and favicon assets
+Made by [Jawad Asghar](https://github.com/JAWAD-ASGHAR)
 
-## Customization
-- **Branding:** Replace images in `public/` with your own logo, hero, and feature images.
-- **AI Models:** Update the models and features in the HTML as needed.
-- **Styling:** Tweak CSS variables in each section for colors, spacing, and fonts.
-
-## Contribution
-1. Fork the repo and create your branch:
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-2. Commit your changes and push:
-   ```bash
-   git commit -am 'Add new feature'
-   git push origin feature/your-feature
-   ```
-3. Open a Pull Request on GitHub.
-
-## Author
-[Jawad Asghar](https://github.com/JAWAD-ASGHAR)
+- GitHub: [@JAWAD-ASGHAR](https://github.com/JAWAD-ASGHAR)
+- Twitter: [@jawadasghar86](https://x.com/jawadasghar86)
+- LinkedIn: [@jawad-a-dev](https://www.linkedin.com/in/jawad-a-dev/)
 
 ---
 
-**ONEPrompt** — Your all-in-one AI workspace for teams and creators.
+Enjoy using ONEPrompt! If you have any questions or feedback, feel free to reach out on my socials above.
