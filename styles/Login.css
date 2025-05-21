@@ -30,6 +30,7 @@ body {
   transition: opacity 1s;
 }
 
+/* button overlay takes 500ms to travel */
 .button-overlay {
   position: absolute;
   left: 0;

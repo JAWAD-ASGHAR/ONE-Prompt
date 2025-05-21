@@ -1,3 +1,4 @@
+// array to carry all available models
 const models = [
   {
     name: "ChatGPT 3.5 Turbo",
@@ -61,17 +62,19 @@ const models = [
   },
 ];
 
+// initially selected model
 let selectedModel = models[0];
 
+// getting relevent DOM elements
 const modelsList = document.getElementById("models-list");
 const modelSearch = document.getElementById("model-search");
 const modelSelector = document.getElementById("model-selector");
 
-function renderModels(filter = "") {
-
+// function to handle models rendering in list
+function renderModels(query = "") {
   modelsList.innerHTML = "";
   const filtered = models.filter((m) =>
-    m.name.toLowerCase().includes(filter.trim().toLowerCase())
+    m.name.toLowerCase().includes(query.trim().toLowerCase())
   );
 
   filtered.forEach((model) => {
@@ -96,6 +99,7 @@ function renderModels(filter = "") {
       <div class="model-badge"><i class='fas fa-bolt'></i> ${model.tokens}</div>
     `;
     
+    // handle click on each card
     item.onclick = () => {
       selectedModel = model;
       updateModelSelector();
@@ -103,6 +107,7 @@ function renderModels(filter = "") {
       document
         .getElementById("select-model-overlay")
         .classList.remove("active");
+        // calling render models to updated selected model class
       renderModels(modelSearch.value);
     };
 
@@ -110,6 +115,7 @@ function renderModels(filter = "") {
   });
 }
 
+// funtion to update models selector
 function updateModelSelector() {
   modelSelector.innerHTML = `
     <span class="model-icon" style="width:18px;height:18px;display:inline-flex;align-items:center;">${selectedModel.icon}</span>
@@ -121,10 +127,12 @@ function updateModelSelector() {
   `;
 }
 
+// handling models search input value change
 modelSearch.addEventListener("input", (e) => {
   renderModels(e.target.value);
 });
 
+// render and update models on initial load on DOM
 document.addEventListener("DOMContentLoaded", () => {
   renderModels();
   updateModelSelector();

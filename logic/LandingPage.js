@@ -1,16 +1,23 @@
+// Here i am getting the relevent elements on content load
 window.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("loading-overlay");
   const videos = document.querySelectorAll("video");
   let loadedVideos = 0;
+  // Here i am tracking loading times
   const minLoadTime = 1000;
   const loadStartTime = Date.now();
 
   function hideOverlay() {
+    // tracking time difference from starting time and function call time
     const timeDifference = Date.now() - loadStartTime;
     const remainingTime = Math.max(0, minLoadTime - timeDifference);
 
+    // time out to atleast show for minimun time
     setTimeout(() => {
       overlay.classList.add("hide");
+      //another time out for smooth animation transition
+      //the overlay takes 800ms to transition so i am using 800ms delay
+      //before loading body content
       setTimeout(() => {
         overlay.style.display = "none";
         document.body.classList.add("loaded");
@@ -20,12 +27,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function checkVideosLoaded() {
     loadedVideos++;
+    // when all videos are loaded hide overlay
     if (loadedVideos === videos.length) {
       hideOverlay();
     }
   }
 
   videos.forEach((video) => {
+    //checking for video smooth playback load
+    // if checks instantly for ready videos
+    // if not then attach a listener to the video in else block
     if (video.readyState >= 3) {
       checkVideosLoaded();
     } else {
@@ -33,6 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // max loading time is 10s for all videos to load
+  // else hiding the overlay
   setTimeout(() => {
     if (loadedVideos < videos.length) {
       hideOverlay();

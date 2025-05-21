@@ -1,13 +1,16 @@
+// handling mobile navigation sidebar toggle open
 document.getElementById("mobile-toggle").addEventListener("click", function () {
   document.getElementById("sidebar").classList.add("show");
   document.getElementById("sidebar-overlay").classList.add("active");
 });
 
+// handling mobile navigation sidebar toggle close
 document.getElementById("close-sidebar").addEventListener("click", function () {
   document.getElementById("sidebar").classList.remove("show");
   document.getElementById("sidebar-overlay").classList.remove("active");
 });
 
+// handling mobile navigation sidebar close on overlay click
 document
   .getElementById("sidebar-overlay")
   .addEventListener("click", function () {
@@ -15,6 +18,7 @@ document
     document.getElementById("sidebar-overlay").classList.remove("active");
   });
 
+// handling close model selector on overlay click
 document
   .getElementById("select-model-overlay")
   .addEventListener("click", function () {
@@ -22,6 +26,7 @@ document
     this.classList.remove("active");
   });
 
+// handling open model selector popup
 document
   .getElementById("model-selector")
   .addEventListener("click", function () {
@@ -29,6 +34,7 @@ document
     document.getElementById("select-model-overlay").classList.add("active");
   });
 
+// handling close model selector popup on overlay click
 document
   .getElementById("select-model-overlay")
   .addEventListener("click", function () {
@@ -36,13 +42,16 @@ document
     document.getElementById("models-popup").style.display = "none";
   });
 
+//boolean to track message processing
 let isProcessing;
 
+//selecting relevent elements from the page
 const chatInput = document.querySelector(".chat-input");
 const sendButton = document.querySelector(".send-button");
 const chatMessages = document.getElementById("chat-messages");
 const initialContent = document.getElementById("initial-content");
 
+// function to add messages to the messages container in UI
 function addMessage(content, isUser = true) {
   const messageDiv = document.createElement("div");
   messageDiv.className = `message ${isUser ? "user" : "assistant"}`;
@@ -51,6 +60,7 @@ function addMessage(content, isUser = true) {
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
+// handle message request and response
 function handleSendMessage() {
   const message = chatInput.value.trim();
   if (message) {
@@ -72,8 +82,10 @@ function handleSendMessage() {
   }
 }
 
+//check for send button if user inputs in messages
 sendButton.addEventListener("click", handleSendMessage);
 
+//check for enter key if user inputs in messages
 chatInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && !e.shiftKey && !isProcessing) {
     e.preventDefault();

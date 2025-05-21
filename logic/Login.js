@@ -1,3 +1,4 @@
+// getting all relevent elements on DOM load
 document.addEventListener('DOMContentLoaded', () => {
     const loginBox = document.getElementById('loginBox');
     const overlayGradient = document.getElementById('overlayGradient');

@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- sidebar for navigation between future pages -->
     <div class="sidebar" id="sidebar">
       <div class="sidebar-menu-container">
         <div class="sidebar-header">
@@ -67,6 +68,9 @@
       </div>
     </div>
  
+    <!-- ai models popup to select different popups
+      the popup is empty initially and content will be injected
+      dynamically on DOM load -->
     <div class="models-popup" id="models-popup">
       <div class="model-container">
         <input placeholder="Search Models..." class="model-search" id="model-search">
@@ -75,6 +79,7 @@
       </div>
     </div>
  
+    <!-- main page content -->
     <div class="main-content" id="main-content">
       <header class="header">
         <div class="mobile-toggle" id="mobile-toggle">
@@ -311,8 +316,10 @@
           </div>
         </div>
  
+        <!-- container to chat messages added by the user on run time  -->
         <div class="chat-messages" id="chat-messages" style="display: none;"></div>
  
+        <!-- chat input to send messages  -->
         <div class="chat-footer">
           <div class="chat-input-container">
             <textarea
@@ -366,6 +373,7 @@
       </div>
     </div>
  
+    <!-- overlays to blur out background on popup opens -->
     <div class="select-model-overlay" id="select-model-overlay"></div>
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
  

@@ -1,3 +1,4 @@
+/* overlay transition time is 800ms */
 #loading-overlay {
   position: fixed;
   z-index: 9999;
@@ -72,15 +73,21 @@
   100% { left: 180px; }
 }
 
+/* all content shifted a little to bottom and scaled out initially */
+
 .hero, .hero-container, .ui-image, .features-container, .ai-modals-container, .footer-container {
   opacity: 0;
   transform: scale(0.98) translateY(-200px);
   transition: opacity 0.7s cubic-bezier(.77,0,.18,1), transform 0.7s cubic-bezier(.77,0,.18,1);
 }
 
+/* classes to show body content */
+
 body.loaded {
   overflow: hidden;
 }
+
+/* get all content to normal view */
 
 body.loaded .hero,
 body.loaded .hero-container,

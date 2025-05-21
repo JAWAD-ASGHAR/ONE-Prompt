@@ -1,3 +1,4 @@
+/* using root element to difine variables for colors and sizes to use in the site */
 :root {
   --color-background: #F6F6F6;
   --color-text: #F6F6F6;
